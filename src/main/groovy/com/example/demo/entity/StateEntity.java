@@ -11,8 +11,9 @@ public class StateEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
+    @JoinColumn(name="state_id")
     private Integer stateId;
+    @Column(name="state_name")
     private String stateName;
     private Integer countryId;
 
