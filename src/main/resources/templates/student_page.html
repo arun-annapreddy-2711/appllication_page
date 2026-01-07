@@ -20,12 +20,16 @@
     <input type="number" th:field="*{number}" /><br><br>
 
     <label>Country:</label>
-    <input type="text" th:field="*{country}" /><br><br>
+    <select name="country">
+        <option value="India" selected>India</option>
+        <option value="USA">USA</option>
+        <option value="UK">UK</option>
+    </select>
+    <label>state:</label>
+    <input type="text" th:field="*{state}" /><br><br>
 
     <label>city:</label>
     <input type="text" th:field="*{city}" /><br><br>
-
-
     <button type="submit">Submit</button>
 
 
